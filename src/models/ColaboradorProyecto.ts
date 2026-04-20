@@ -1,22 +1,22 @@
 import {Model} from "sequelize";
 
 interface ColaboradorProyectoAtributos{
-    idProyectoColaboradorProyecto:number,
-    idColaboradorColaboradorProyecto:number,
-    tareaColaboradorProyecto:string
+    idProyectoCP:number,
+    idColaboradorCP:number,
+    tareaCP:string
 }
 
 module.exports = (sequelize:any, DataTypes:any)=>{
     class ColaboradorProyectoModel extends Model<ColaboradorProyectoAtributos> implements ColaboradorProyectoAtributos{
-        idProyectoColaboradorProyecto!:number;
-        idColaboradorColaboradorProyecto!:number;
-        tareaColaboradorProyecto!:string;
+        idProyectoCP!:number;
+        idColaboradorCP!:number;
+        tareaCP!:string;
         static associate(models:any){
             //TO DO
         }
     }
     ColaboradorProyectoModel.init({
-        idProyectoColaboradorProyecto:{
+        idProyectoCP:{
             type:DataTypes.INTEGER,
             allowNull:false,
             primaryKey:true,
@@ -25,7 +25,7 @@ module.exports = (sequelize:any, DataTypes:any)=>{
                 key:'idProyecto'
             }
         },
-        idColaboradorColaboradorProyecto:{
+        idColaboradorCP:{
             type:DataTypes.INTEGER,
             allowNull:false,
             primaryKey:true,
@@ -34,10 +34,10 @@ module.exports = (sequelize:any, DataTypes:any)=>{
                 key:'idColaborador'
             }
         },
-        tareaColaboradorProyecto:DataTypes.STRING
+        tareaCP:DataTypes.STRING
     },{
         sequelize,
-        modelName:'ColaboradorProyecto'
+        modelName:'ColabProy'
     });
     return ColaboradorProyectoModel
 }
