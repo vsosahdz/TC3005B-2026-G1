@@ -34,7 +34,7 @@ module.exports = (sequelize:any, DataTypes:any)=>{
                 key:'idColaborador'
             }
         },
-        tareaColaboradorProyecto:DataTypes.String
+        tareaColaboradorProyecto:DataTypes.STRING
     },{
         sequelize,
         modelName:'ColaboradorProyecto'
