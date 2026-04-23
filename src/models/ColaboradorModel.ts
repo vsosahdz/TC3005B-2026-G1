@@ -24,7 +24,7 @@ module.exports = (sequelize:any,DataTypes:any)=>{
         //Un colaborador pertenece a muchos proyectos
         static associate(models:any){
             ColaboradorModel.belongsToMany(models.Proyecto,{
-                through: 'ColaboradorProyecto'
+                through: 'ColabProy'
             })
         }
     }

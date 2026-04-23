@@ -14,7 +14,7 @@ module.exports = (sequelize:any, DataTypes:any) =>{
         descripcionProyecto!:string;
         static associate(models:any){
             ProyectoModel.belongsToMany(models.Colaborador,{
-                through:'ColaboradorProyecto'
+                through:'ColabProy'
             })
         }
     }
