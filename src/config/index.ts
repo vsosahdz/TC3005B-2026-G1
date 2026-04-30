@@ -7,3 +7,8 @@ export const DB_NAME = process.env.DB_NAME || 'prueba';
 export const DB_USER = process.env.DB_USER || 'root';
 export const DB_PASSWORD = process.env.DB_PASSWORD || 'Password1234';
 export const DB_HOST = process.env.DB_HOST || 'localhost';
+
+export const DB_NOSQL_NAME = process.env.DB_NOSQL_NAME || 'test';
+export const DB_NOSQL_USER = process.env.DB_NOSQL_USER || 'admin';
+export const DB_NOSQL_PASS = process.env.DB_NOSQL_PASS || 'Password1234';
+export const DB_NOSQL_HOST = process.env.DB_NOSQL_HOST || 'localhost';
