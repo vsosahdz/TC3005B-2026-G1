@@ -10,8 +10,8 @@ export default class ClienteController extends AbstractController{
     }
 
     protected initRoutes(): void {
-        this.router.get('/listarClientes',);
-        this.router.post('/crearCliente',)
+        this.router.get('/listarClientes',this.getListarClientes.bind(this));
+        this.router.post('/crearCliente',this.postCrearCliente.bind(this));
     }
 
     private  async getListarClientes(req:Request,res:Response):Promise<void>{
