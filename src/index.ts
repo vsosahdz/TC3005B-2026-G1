@@ -4,6 +4,7 @@ import express from 'express';
 import cors from 'cors';
 //Importar controllers
 import ProyectoController from './controllers/ProyectoController';
+import ClienteController from './controllers/ClienteController';
 
 const server:Server = new Server({
     port:PORT,
@@ -14,7 +15,8 @@ const server:Server = new Server({
         cors()
     ],
     controllers:[
-        ProyectoController.instance
+        ProyectoController.instance,
+        ClienteController.instance
     ]
 })
 server.init();
