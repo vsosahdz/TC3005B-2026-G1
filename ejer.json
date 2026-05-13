@@ -1,0 +1,82 @@
+{
+  "ejercicio_nosql": {
+    "descripcion": "27 colecciones para práctica de bases de datos no relacionales con matrícula asignada",
+    "colecciones": [
+      {
+        "nombre": "productos",
+        "atributos": ["nombre", "precio", "categoria"],
+        "matricula": "A01751322"
+      },
+      {
+        "nombre": "inventario",
+        "atributos": ["sku", "cantidad", "almacen_id"],
+        "matricula": "A01750747"
+      },
+      {
+        "nombre": "transacciones",
+        "atributos": ["monto", "metodo_pago", "fecha_hora"],
+        "matricula": "A01749050"
+      },
+      {
+        "nombre": "cupones",
+        "atributos": ["codigo", "descuento_porcentaje", "activo"],
+        "matricula": "A01751722"
+      },
+      {
+        "nombre": "facturas",
+        "atributos": ["numero_serie", "rfc_receptor", "total_impuestos"],
+        "matricula": "A01801486"
+      },
+      {
+        "nombre": "proveedores",
+        "atributos": ["razon_social", "contacto_principal", "calificacion"],
+        "matricula": "A01369043"
+      },
+      {
+        "nombre": "usuarios",
+        "atributos": ["username", "biografia", "seguidores_count"],
+        "matricula": "A01276808"
+      },
+      {
+        "nombre": "comentarios",
+        "atributos": ["texto", "usuario_id", "editado"],
+        "matricula": "A01800971"
+      },
+      {
+        "nombre": "podcast",
+        "atributos": ["titulo", "anfitrion", "duracion_promedio"],
+        "matricula": "A01800657"
+      },
+      {
+        "nombre": "streams",
+        "atributos": ["streamer_id", "espectadores_pico", "categoria_juego"],
+        "matricula": "A01752615"
+      },
+      {
+        "nombre": "notificaciones",
+        "atributos": ["tipo_alerta", "leido", "prioridad"],
+        "matricula": "A01801099"
+      },
+      {
+        "nombre": "albumes",
+        "atributos": ["nombre_album", "artista", "año_lanzamiento"],
+        "matricula": "A01801062"
+      },
+      {
+        "nombre": "cursos",
+        "atributos": ["titulo", "instructor", "nivel_dificultad"],
+        "matricula": "A01750496"
+      },
+      {
+        "nombre": "estudiantes",
+        "atributos": ["matricula_alumno", "carrera", "promedio_general"],
+        "matricula": "A01800476"
+      },
+      {
+        "nombre": "lecciones",
+        "atributos": ["orden", "contenido_url", "tipo_archivo"],
+        "matricula": "A01753036"
+      }
+    ]
+  }
+}

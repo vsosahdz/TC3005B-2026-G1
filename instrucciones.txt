@@ -1,0 +1,7 @@
+
+1.-Copiar el boiler plate del proyecto
+2.-Generar una coleccion en un archivo de model de acuerdo a su numero de matricula
+3.-Generar un controller para crear (post) y listar (get)
+4. Integrar proyecto
+5. Desplegar localmente
+6. Probar ambas rutas en postman para revision con la IP del TEC
