@@ -1,10 +1,15 @@
 import {Router} from 'express';
+import CognitoService from '../services/CognitoService';
+import AuthMiddleware from '../middlewares/authorization';
 
 
 export default abstract class AbstractController {
     //Atributos de instancia
     private _router: Router;
     private _prefix:string;
+
+    protected authMiddleware = AuthMiddleware.instance;
+    protected cognitoService = CognitoService.instance;
 
     //Getters
     public get router(): Router {

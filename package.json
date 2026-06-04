@@ -21,17 +21,23 @@
   },
   "homepage": "https://github.com/vsosahdz/TC3005B-2026-G1#readme",
   "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.1057.0",
     "@typegoose/typegoose": "^13.2.1",
+    "axios": "^1.16.1",
     "cors": "^2.8.6",
     "dotenv": "^17.4.1",
     "express": "^5.2.1",
-    "mongoose": "^9.5.0",
+    "jsonwebtoken": "^9.0.3",
+    "jwk-to-pem": "^2.0.7",
+    "mongoose": "^9.2.2",
     "mysql2": "^3.22.0",
     "sequelize": "^6.37.8"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/jwk-to-pem": "^2.0.3",
     "typescript": "^6.0.2"
   }
 }

@@ -5,6 +5,7 @@ import cors from 'cors';
 //Importar controllers
 import ProyectoController from './controllers/ProyectoController';
 import ClienteController from './controllers/ClienteController';
+import UsuarioController from './controllers/UsuarioController';
 
 const server:Server = new Server({
     port:PORT,
@@ -16,7 +17,19 @@ const server:Server = new Server({
     ],
     controllers:[
         ProyectoController.instance,
-        ClienteController.instance
+        ClienteController.instance,
+        UsuarioController.instance
     ]
 })
+
+//Extendiendo la interfaz Request de Express para poder acceder a los datos del usuario
+declare global {
+    namespace Express {
+        interface Request {
+            user: string;
+            token: string;
+        }
+    }
+}
+
 server.init();
